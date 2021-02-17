@@ -6,6 +6,10 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+
+  @media screen and (max-width: 768px) {
+    height: unset;
+  }
 }
 
 .wrapper {
@@ -15,12 +19,24 @@
   column-gap: 10%;
   padding: 0 120px;
 
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 100%;
+    row-gap: 5vh;
+    padding: 100px 20px 20px;
+  }
+
   .lhs {
     h1 {
       font-size: 60px;
       line-height: 60px;
       color: #ffffff;
       margin: 0;
+
+      @media screen and (max-width: 768px) {
+        font-size: 32px;
+        line-height: 32px;
+        text-align: center;
+      }
     }
 
     p {
@@ -28,6 +44,12 @@
       color: #ffffff;
       line-height: 22px;
       margin: 4vh 0 0;
+
+      @media screen and (max-width: 768px) {
+        font-size: 15px;
+        line-height: 20px;
+        text-align: center;
+      }
     }
   }
 
@@ -47,6 +69,10 @@
       flex-direction: column;
       padding: 40px;
       border-radius: 8px;
+
+      @media screen and (max-width: 768px) {
+        padding: 30px;
+      }
 
       input {
         height: 45px;
